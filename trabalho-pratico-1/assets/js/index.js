@@ -1,9 +1,12 @@
-function activeMenu(element) {
+function changeMenu(element) {
     let current = document.getElementsByClassName("active");
 
     if (!!current[0]) {
         current[0].className = current[0].className.split(/[^A-Za-z]/).filter(value => value !== 'active').join(" ");
     }
+
+    let detailTitle = document.getElementById('detailTitle');
+    detailTitle.innerHTML = element.innerHTML
 
     const parent = element.parentElement
 
