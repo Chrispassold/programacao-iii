@@ -20,9 +20,9 @@
         <form action="#" class="bg-blue-darker">
             <label>
                 Busca
-                <input value="">
+                <input value="" id="searchInput">
             </label>
-            <button><span>»</span></button>
+            <button onclick="validInput()"><span>»</span></button>
         </form>
     </div>
 
@@ -47,30 +47,58 @@
     </ul>
 </nav>
 
-<div class="group">
-    <section>
-        <div class="big-image-container">
-            <img src="../assets/img/big-image.jpg" alt="Big image">
-            <div class="legenta-container">
-                <div><span class="legenda">
+<section>
+    <div class="big-image-container">
+        <img src="../assets/img/big-image.jpg" alt="Big image">
+        <div class="legenta-container">
+            <div><span class="legenda">
                     <strong>Título conferido: </strong> Bacharel
                 </span></div>
-                <div><span class="legenda">
+            <div><span class="legenda">
                     <strong>Duração: </strong> 8 fases (4 anos)
                 </span></div>
-                <div><span class="legenda">
+            <div><span class="legenda">
                     <strong>Turno: </strong> matutino ou noturno (vestibular de verão ou inverno)
                 </span></div>
-            </div>
         </div>
+    </div>
 
-        <div class="details">
-
+    <div class="details">
+        <h1 class="title">Administração</h1>
+        <div class="content">
+            <p> A Administração envolve, em uma mesma área, conhecimentos das ciências exatas e humanas.
+                Planejamento estratégico, finanças, recursos humanos e marketing são alguns dos temas abordados
+                durante o curso.
+            </p>
+            <p>
+                O administrador é a figura central do dia a dia de qualquer instituição. Suas atribuições vão da boa
+                utilização da matéria-prima, passando pela qualidade do ambiente de trabalho até chegar ao
+                relacionamento com os clientes.
+            </p>
         </div>
+    </div>
 
-    </section>
-    <aside></aside>
-</div>
+</section>
+<aside>
+
+    <div class="right-menu">
+        <ul>
+            <li class="active"><a href="#" onclick="activeMenu(this)">Apresentação</a></li>
+            <li><a href="#" onclick="activeMenu(this)">Infraestrutura</a></li>
+            <li><a href="#" onclick="activeMenu(this)">Intercâmbio</a></li>
+            <li><a href="#" onclick="activeMenu(this)">Currículo</a></li>
+            <li><a href="#" onclick="activeMenu(this)">Bases legais</a></li>
+            <li><a href="#" onclick="activeMenu(this)">Professores</a></li>
+            <li><a href="#" onclick="activeMenu(this)">Mensalidade</a></li>
+            <li><a href="#" onclick="activeMenu(this)">Avaliação do curso</a></li>
+            <li><a href="#" onclick="activeMenu(this)">Outras informações</a></li>
+            <li><a href="#" onclick="activeMenu(this)">Como ingressar</a></li>
+        </ul>
+    </div>
+
+</aside>
+
+<script src="../assets/js/index.js"></script>
 
 </body>
 </html>

@@ -23,13 +23,11 @@ aside, section {
 section {
     float: left;
     width: calc(100% - 350px);
-    border: 1px red solid;
 }
 
 aside {
     float: right;
     width: 350px;
-    border: 1px blue solid;
 }
 
 a:link, a:visited {
@@ -159,9 +157,64 @@ header form > label {
 }
 
 .details {
-    width: 100%;
+    width: calc(100% - 350px);
     height: 100px;
-    background: red;
+}
+
+.details > .content p {
+    margin-bottom: 20px;
+}
+
+.details > .content {
+    color: #333333;
+    font: 10pt Verdana, Geneva, sans-serif;
+    line-height: 175%;
+}
+
+.details > .title {
+    color: #00549a;
+    text-transform: uppercase;
+    font: 15pt Arial, Helvetica, sans-serif;
+    line-height: 150%;
+}
+
+.right-menu {
+    margin: 25px;
+    padding-bottom: 35px;
+    width: 200px;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.right-menu ul > li a:hover {
+    background-color: #F6F6F1;
+    text-decoration: none;
+}
+
+.right-menu ul > li.active a {
+    border-right: 1px solid #D6D3B8;
+    border-left: 1px solid #D6D3B8;
+    background-color: #F6F6F1;
+    font-weight: bold;
+}
+
+.right-menu ul > li a {
+    display: block;
+    padding: 10px 15px;
+    color: #00549A;
+    text-decoration: none;
+}
+
+.right-menu ul > li {
+    position: relative;
+    z-index: 100;
+    border-bottom: 1px solid #D6D3B8;
+}
+
+.right-menu ul {
+    margin: 0;
+    border-top: 1px solid #D6D3B8;
+    list-style-type: none;
 }
 
 /*//////////////////////////////////////////*/
