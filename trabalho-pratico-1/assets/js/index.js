@@ -6,9 +6,11 @@ function changeMenu(element) {
     }
 
     let detailTitle = document.getElementById('detailTitle');
-    detailTitle.innerHTML = element.innerHTML
+    let breadcrumbTitle = document.getElementById('breadcrumbTitle');
+    detailTitle.innerHTML = element.innerHTML;
+    breadcrumbTitle.innerHTML = element.innerHTML;
 
-    const parent = element.parentElement
+    const parent = element.parentElement;
 
     let arrClass = parent.className.split(/[^A-Za-z]/);
 
